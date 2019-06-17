@@ -1,0 +1,28 @@
+.container{
+    width: 700px;
+    height: 250px;
+
+    padding: 55px;
+    background-color: blanchedalmond;
+    margin: 200px;;
+}
+.item{
+    height: 150px;
+    width: 500px;
+    background-color: aquamarine;
+}
+
+.container2{
+    width: 1000px;
+    height: 200px;
+
+    padding: 25px;
+    background-color: gray;
+    margin: 100px;
+}
+
+.item2{
+    width: 750px;
+    height: 100px;
+    background-color: brown;
+}

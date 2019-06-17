@@ -1,0 +1,12 @@
+a:hover{
+    color: darkblue;
+}
+a:active{
+    color: red;
+}
+p:first-child{
+    background-color: aqua;
+}
+p:last-child{
+    background-color: bisque;
+}
