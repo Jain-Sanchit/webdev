@@ -1,0 +1,17 @@
+div{
+    height: 100px;
+    width: 250px;
+    background-color: palevioletred;
+    margin: 150px;
+}
+
+#Div1:active{
+    transform: scale(1.5);
+    border: 2px solid black;
+    transition: transform 2s , border 1s;
+}
+
+#Div2:hover{
+    width: 500px;
+    transition: width 1s;
+}

@@ -1,0 +1,23 @@
+    div{
+        height: 100px;
+        width: 200px;
+        background-color: bisque;
+        text-align: center;
+        margin: 20px;
+        padding: 50px;
+
+    }
+
+    #div1{
+        transform: translate(30px,30px);
+    }
+
+    #div2{
+        
+        transform: rotate(45deg);
+        transform: scale(1.2) translate(20px,15px);
+    }
+    #div3{
+        transform: skew(20deg);
+        transform: scale(.75);
+    }

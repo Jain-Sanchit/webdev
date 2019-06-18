@@ -1,0 +1,27 @@
+div{
+    height: 100px;
+    width: 300px;
+    background-color: beige;
+    margin: 20px;
+}
+
+#div1{
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+
+#div2{
+    position: fixed;
+    left: 400px;
+}
+
+#Div3{
+    position: sticky;
+    top: 1px;
+}
+#div4{
+    position: absolute;
+    top: 10px;
+    
+}
