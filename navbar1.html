@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bar</title>
+</head>
+<style type="text/css">
+	.view{
+		height: 40px;
+		width: 9.9%;
+		font-size: 14px;
+		background-color: beige;
+		display: inline-block;
+		text-align: center;
+		margin-top: 0px;
+		padding-top: 15px;
+		margin-bottom: 0px;
+		padding-bottom: 0px;
+		float: left;
+	}
+	img{
+		height: 30px;
+		width: 100px;
+	}
+	.view .item{
+		display: none;
+	}
+	.view:hover{
+		transform: scale(1.1);
+		color: #EC6464;
+		border: 1px solid #9B8181;
+		border-radius: 5%;
+	}
+	.view:hover .item{
+		display: block;
+		
+	}
+	.content{
+		/*margin-top: 21px;*/
+		/*margin-top: -10px;*/
+		margin-top: 20px;
+		position: relative;
+		transform: translateX(-41px);
+
+	}
+	.item{
+		height: 40px;
+		width: 120px;
+		color: white;
+		background-color: #565252;
+		font-size: 15px;
+		text-align: center;
+		padding-top: 15px;
+	}
+	.item1{
+		height: 18px;
+		width: 120px;
+		color: white;
+		background-color: #918686;
+		font-size: 15px;
+		text-align: center;
+		padding-top: 5px;
+	}
+	.item:hover{
+		
+		text-decoration-color: red;
+		color: red;
+		transform: scale(1.1);
+		border: 1px solid #EE7979;
+		border-radius: 15%;
+	}
+
+	a{
+		text-decoration: none;
+		color: white;
+		
+	}
+	a:hover{
+		color: red;
+	}
+	ul{
+		list-style: none;
+	}
+	.item>.submenuL{
+		display: none;
+	}
+	.item:hover>.submenuL{
+		display: block;
+	}
+	.submenuL{
+		transform: translate(-155px,-30px);
+
+	}
+</style>
+<body>
+	<div class="view"><img src="cblogo.png" alt="Logo"></div>
+	<div class="view"></div>
+	<div class="view"></div>
+<div class="view">Campus Ambassador &darr;</div>
+<div class="view">About Us &darr;
+	<div class="content">
+		<ul>
+			<li class="item"><a href="https://codingblocks.com/about.html" >Introduction</a></li>
+			<li class="item"><a href="https://codingblocks.com/why-coding-blocks.html" >Why Coding Blocks</a></li>
+			<li class="item"><a href="https://codingblocks.com/team.html" >Our Team</a></li>
+			<li class="item"><a href="https://codingblocks.com/brochure.html" >Brochure</a></li>
+			<li class="item"><a href="https://codingblocks.com/reviews" >Reviews</a></li>
+			<li class="item"><a href="https://codingblocks.com/success-stories.html" >Wall of fame</a></li>
+			<li class="item"><a href="https://codingblocks.com/events" >Events</a></li>
+			<li class="item"><a href="https://codingblocks.com/newsletter" >NewsLetter</a></li>
+			<li class="item"><a href="https://codingblocks.com/alumni.html" >Alumni Portal</a></li>
+		</ul>
+	</div>
+</div>
+<div class="view">Classroom Courses
+	<div class="content">
+		<ul>
+			<li class="item"><a href="https://codingblocks.com/classroom-courses/six_months_ind_training.html" >Industrial Training</a></li>
+			<li class="item"><a href="https://codingblocks.com/" >Junior &#x203A</a>
+				<div class="submenuL">
+					<ul>
+						<li class="item1"><a href="https://codingblocks.com/classroom-courses/code4kids.html" >Code4Kids</a></li>
+						<li class="item1"><a href="https://codingblocks.com/classroom-courses/mathsgeeks.html" >MathsGeeks</a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="item"><a href="https://codingblocks.com/#" >Beginner &#x203A</a>
+			<div class="submenuL">
+					<ul>
+						<li class="item1"><a href="https://codingblocks.com/classroom-courses/c-plus-plus-for-beginners.html" >C++</a></li>
+						<li class="item1"><a href="https://codingblocks.com/classroom-courses/java-for-beginners.html" >Java</a></li>
+						<li class="item1"><a href="https://codingblocks.com/classroom-courses/python-app-dev.html" >Python App Development</a></li>
+					</ul>
+				</div></li>
+			<li class="item"><a href="https://codingblocks.com/#" >Development &#x203A</a>
+			<div class="submenuL">
+					<ul>
+						<li class="item1"><a href="https://codingblocks.com/classroom-courses/android-app-development-using-kotlin-and-java.html" >Android</a></li>
+						<li class="item1"><a href="https://codingblocks.com/classroom-courses/web-development-nodejs.html" >Fullstack Web</a></li>
+						<li class="item1"><a href="https://codingblocks.com/classroom-courses/web-development-django.html" >Web Python</a></li>
+						<li class="item1"><a href="https://codingblocks.com/classroom-courses/advanced-java.html" >Web Backend Java</a></li>
+						<li class="item1"><a href="https://codingblocks.com/classroom-courses/unity-game-development.html" >Unity Game Development</a></li>
+					</ul>
+				</div></li>
+			<li class="item"><a href="https://codingblocks.com/#" >Advanced &#x203A</a>
+			<div class="submenuL">
+					<ul>
+						<li class="item1"><a href="https://codingblocks.com/classroom-courses/advanced-data-structures-and-algorithms-for-interviews.html" >Algo++</a></li>
+						<li class="item1"><a href="https://codingblocks.com/classroom-courses/advanced-data-structures-and-algorithms-using-java.html" >Algo Java</a></li>
+						<li class="item1"><a href="https://codingblocks.com/classroom-courses/machine-learning-with-deep-learning.html" >Machine Learning</a></li>
+						<li class="item1"><a href="https://codingblocks.com/classroom-courses/competitive-programming.html" >Competitive Prog</a></li>
+					</ul>
+				</div></li>
+			<li class="item"><a href="https://codingblocks.com/#" >Bootcamps &#x203A</a>
+			<div class="submenuL">
+					<ul>
+						<li class="item1"><a href="https://codingblocks.com/bootcamps/react.html" >ReactJS</a></li>
+						<li class="item1"><a href="https://codingblocks.com/bootcamps/coding-interview-preparation.html" >Interview Prep</a></li>
+						<li class="item1"><a href="https://codingblocks.com/bootcamps/blockchain.html" >BlockChain</a></li>
+						<li class="item1"><a href="https://codingblocks.com/coming-soon.html" >Machine learning</a></li>
+						<li class="item1"><a href="https://codingblocks.com/bootcamps/chatbots.html" >Chatbots</a></li>
+						<li class="item1"><a href="https://codingblocks.com/bootcamps/angular.html" >Angular</a></li>
+						<li class="item1"><a href="https://codingblocks.com/bootcamps/gamedev.html" >Game Dev</a></li>
+						<li class="item1"><a href="https://codingblocks.com/bootcamps/opensource.html" >Open Source</a></li>
+					</ul>
+				</div></li>
+		</ul>
+	</div>
+</div>
+<div class="view">Online Courses &darr;
+<div class="content">
+		<ul>
+			<li class="item"><a href="https://online.codingblocks.com/courses/coding-interview-preparation-online#runs" >Interview Bootcamp</a></li>
+			<li class="item"><a href="https://online.codingblocks.com/courses/coding-interview-preparation-course-online" >Interview Prep</a></li>
+			<li class="item"><a href="https://online.codingblocks.com/courses/c-plus-plus-online-course-for-beginners" >Launchpad C++</a></li>
+			<li class="item"><a href="https://online.codingblocks.com/courses/data-structures-and-algorithms-online-course" >Algo++</a></li>
+			<li class="item"><a href="https://online.codingblocks.com/courses/complete-java-course-online" >Java</a></li>
+			<li class="item"><a href="https://online.codingblocks.com/courses/data-structures-and-algorithms-online-course-java-algo" >DS & Algo</a></li>
+			<li class="item"><a href="https://online.codingblocks.com/courses/web-development-online-course" >Web Dev</a></li>
+			<li class="item"><a href="https://online.codingblocks.com/courses/competitive-programming-course-online#runs" >Competitive</a></li>
+			<li class="item"><a href="https://online.codingblocks.com/courses/machine-learning-course-online#runs" >Machine Learning</a></li>
+			<li class="item"><a href="https://online.codingblocks.com/courses/android-app-training-online#runs" >Android</a></li>
+		</ul>
+	</div></div>
+<div class="view">Resources &darr;
+<div class="content">
+		<ul>
+			<li class="item"><a href="https://hack.codingblocks.com/">Hacker Blocks</a></li>
+			<li class="item"><a href="https://codingblocks.com/resources">Tutorials</a></li>
+			<li class="item"><a href="https://codingblocks.com/online-courses/competitive-online-study-material.html">Competitive Programming</a></li>
+			<li class="item"><a href="https://ide.codingblocks.com/">Online IDE</a></li>
+			<li class="item"><a href="https://blog.codingblocks.com/">Blog</a></li>
+			<li class="item">Apps &#x203A
+				<div class="submenuL">
+					<ul>
+						<li class="item1"><a href="https://cb.lk/" >ShortLR</a></li>
+						<li class="item1"><a href="https://play.google.com/store/apps/details?id=in.tosc.digitaloceanapp" >Digital Ocean</a></li>
+						<li class="item1"><a href="https://angrycoders.codingblocks.com/" >Angry Coders</a></li>
+						<li class="item1"><a href="https://coding-blocks.github.io/tic-tac-toe/" >Tic Tac Toe</a></li>
+						<li class="item1"><a href="https://play.google.com/store/apps/details?id=com.developers.dictionary.flying" >Flying Dictionary
+						<li class="item1"><a href="https://play.google.com/store/apps/details?id=com.gamershq.FlyingModi" >Fly High MODI</a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="item"><a href="https://bytecast.codingblocks.com/">Podcast</a></li>
+		</ul>
+	</div></div>
+<div class="view">Competitions &darr;
+<div class="content">
+		<ul>
+			<li class="item"><a href="https://hack.codingblocks.com/" >Hacker Blocks</a></li>
+			<li class="item"><a href="https://boss.codingblocks.com/" >BOSS</a></li>
+			</ul>
+	</div></div>
+<div class="view">Contact Us &darr;
+<div class="content">
+		<ul>
+			<li class="item"><a href="https://codingblocks.com/centres/" >Centres &#x203A</a>
+				<div class="submenuL">
+					<ul>
+						<li class="item1"><a href="https://codingblocks.com/centres/pitampura.html" >Pitampura</a></li>
+						<li class="item1"><a href="https://codingblocks.com/centres/dwarka.html" >DwarkaNoida</a></li>
+						<li class="item1"><a href="https://codingblocks.com/centres/noida.html#default" >Noida</a></li>
+						<li class="item1"><a href="https://codingblocks.com/centres/dehradun.html#default" >Dehradun</a></li>
+					</ul>
+				</div>
+			</li>
+			<li class="item"><a href="https://codingblocks.com/signup" >Sign Up</a></li>
+			<li class="item"><a href="https://codingblocks.com/signup/job.html" >Careers</a></li>
+			<li class="item"><a href="https://codingblocks.com/signup/company.html" >Hire Students</a></li>
+			<li class="item"><a href="https://codingblocks.com/signup/workshop.html" >Request a Workshop</a></li>
+		</ul>
+	</div></div>
+</body>
+</html>
