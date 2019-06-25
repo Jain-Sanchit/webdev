@@ -1,4 +1,4 @@
-let arr=[2,2,2,2,2,2,2,2]
+let arr=[2,3,4]
 
 // rms=Math.sqrt(/arr.length)
 
