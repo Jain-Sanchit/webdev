@@ -1,0 +1,17 @@
+div{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+
+}
+div:active{
+    display: none;
+}
+
+ul ul{
+    display: none;
+}
+
+li:hover > ul{
+    display: block;
+}
