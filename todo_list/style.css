@@ -1,0 +1,56 @@
+body{
+    background-image : url("index4.jpg");
+    background-repeat: no-repeat;
+    background-size: auto
+}
+
+
+#heading{
+    margin-left: 30%;
+    color: aquamarine;
+    font-size: 38px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+
+#inputBox{
+    margin-left: 25%;
+    width: 20%;
+    height: 40px;
+    border: solid darksalmon 4px;
+    border-radius: 25%;
+    color: darkgoldenrod;
+}
+
+#btn{
+
+    margin-left: 20px;
+    width: 120px;
+    text-align: center;
+    height: 40px;
+    font-size: 19px;
+}
+
+#list{
+    margin-top: 50px;
+margin-left: 28%;
+font-size: 27px;
+color: #b9f2ff;
+
+}
+
+
+
+
+#btn2{
+
+    margin-left: 30%;
+    border: solid teal 2px;
+    text-align: center;
+    height: 40px;
+    font-size: 19px;
+}
+
+#btn2:hover{
+    background-color: chocolate
+}
