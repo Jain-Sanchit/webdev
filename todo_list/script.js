@@ -19,10 +19,9 @@ function doFunction() {
     
     list.innerHTML +=str;
     
-    inputBox.value=''
+    inputBox.value=null
     
 }
-
 
 function doFunction2(){
     let items=list.getElementsByTagName("li");
