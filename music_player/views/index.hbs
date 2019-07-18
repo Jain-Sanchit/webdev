@@ -25,27 +25,41 @@
   <div class="row">
     <div class="col-sm">
         <ul>
-            <li><a href="index.hbs">Home</a></li>
-            <li><a href="add.hbs">ADD</a></li>
-            <br>
-            <br>
+            <li><a href="/">Home</a></li>
+            <li><a href="/add">ADD</a></li>
 
             
-            {{#each songs}}
+            {{#each tracks}}
             
             <li>
-                <a href="google.com"  >{{title}}</a>
+                <a href="/?id={{_id}}">{{title}}</a>
             </li>
             {{/each}}
         </ul>
       
+      
     </div>
     
     <div class="col-sm">
+
+    
+          {{#if selectedTrack}}
+                
+            <h2>{{selectedTrack.title}}</h2>
+            <h4>by {{selectedTrack.singer}}</h4>
+
+            <img src="{{selectedTrack.image}}" alt="{{selectedTrack.singer}}"  height="200px">
+
+            <audio src="{{selectedTrack.file}}" controls autoplay></audio>
+          
+
+
+      {{else}}
       <div id="intro">
           <h2>Welcome</h2>
           <p>This is my player <br> Welcome here </p>
       </div>
+      {{/if}}
     </div>
     
   </div>

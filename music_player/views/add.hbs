@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add track</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body>
+    <form action="/add"  enctype="multipart/form-data" method="POST">
+  <div class="form-group">
+    <label >Title</label>
+    <input type="text"  name="title" class="form-control" placeholder="Title">
+  </div>
+  <div class="form-group">
+    <label >Singer</label>
+    <input type="text" name="singer" class="form-control"  placeholder="Singer name">
+    <small class="form-text text-muted">This will Singer of the track</small>
+  </div>
+  <div class="form-group">
+    <label >Image URL</label>
+    <input type="text" name="image" class="form-control" placeholder="Image URL">
+  </div>
+  <div class="form-group">
+    <label >Track</label>
+    
+   <input type="file" name="file" class="form-control"  placeholder="Track file">
+
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</body>
+</html>
