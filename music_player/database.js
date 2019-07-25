@@ -14,17 +14,19 @@ const getTracks = () =>
   .then(cursor => cursor.toArray())
 
 
-const insertTrack = (track) =>
-  getDb()
+// const insertTrack = (track) =>
+//   getDb()
+  // .then(db => db.collection('tracks'))
+  // .then(collection => collection.insertOne(track))
+
+const insertTrack = (track) => ({
+    title: track.title,
+    singer: track.singer,
+    image: track.image,
+    file: './public/'+track.fileN
+  }).then(() => console.log("Done!"))
   .then(db => db.collection('tracks'))
   .then(collection => collection.insertOne(track))
-
-//   insertTrack({
-//     title: 'XYZ',
-//     singer: 'XYZABC',
-//     image: 'https://ksassets.timeincuk.net/wp/uploads/sites/55/2019/03/radiohead_2000-620x394.jpg',
-//     file: 'numbers.mp3'
-//   }).then(() => console.log("Done!"))
   
 
   getTracks().then(tracks => console.log(tracks))

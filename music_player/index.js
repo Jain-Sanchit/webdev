@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express()
 const hbs = require('hbs')
+const path = require("path");
 const multer = require('multer');
 const { getTracks, insertTrack } = require('./database')
 
@@ -27,7 +28,7 @@ app.set('view engine', 'hbs')
       cb(null, 'public')
     },
     filename: function (req, file, cb) {
-      cb(null, file.fieldname + '-' + Date.now() + '.mp3')
+      cb(null,Date.now() +path.extname(file.originalname))
     }
   })
    
@@ -53,8 +54,15 @@ app.get('/add',(req,res)=>{
 
 app.post('/add',upload.single('file'),(req,res,next)=>{
     const newTrack=req.body
-    const file = req.file
-    console.log(file.filename);
+    //newTrack.filename=req.file.filename
+    //newTrack.fileN=file.name;
+    insertTrack(newTrack).then(result=>{
+        console.log(result);
+        res.redirect('/?id=' + result.ops[0]._id)  
+
+
+
+        //console.log(file.filename);
     
     // console.log(req.body);
     
@@ -65,26 +73,12 @@ app.post('/add',upload.single('file'),(req,res,next)=>{
     //     image: req.body.image,
     //     file: req.body.file
     // }) 
-//V7FeK9bfQes
-
-
-    newTrack.filename=req.file.filename
-    console.log(newTrack.filename);
-    
-    insertTrack(newTrack).then(result=>{
-        console.log(result);
-        //console.log(result.filename);
-        //result.file.filename=req.file.filename;
-        res.redirect('/?id=' + result.ops[0]._id)
-        
-        
+     //res.redirect('/?id='+ tracks.length)
     })
-    //res.redirect('/?id='+ tracks.length)
-
 })
 
 
-app.listen(3000,function(){
-    console.log("Running on 3000");
+app.listen(3030,function(){
+    console.log("Running on 3030");
     
 })
